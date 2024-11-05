@@ -83,4 +83,4 @@ jobs:
       - name: output Information
         run: |
           echo "Someting went Wront"
-          echo "${{ github }}"
+          echo "${{ toJson(github)  }}"
