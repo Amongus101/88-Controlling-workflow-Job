@@ -65,8 +65,8 @@ jobs:
           name: dist-files
           path: dist
   deploy:
-    needs: build
-    uses: ./github/workflows/reusable.yml
+      needs: build
+      uses: ./github/workflows/reusable.yml
  
   report:
     needs: [lint, deploy]
